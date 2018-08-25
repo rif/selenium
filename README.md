@@ -1,15 +1,13 @@
 # The most complete, best-tested WebDriver client for Go
 
-[![GoDoc](https://godoc.org/github.com/tebeka/selenium?status.svg)](https://godoc.org/github.com/tebeka/selenium)
-[![Travis](https://travis-ci.org/tebeka/selenium.svg?branch=master)](https://travis-ci.org/tebeka/selenium)
-[![Go Report Card](https://goreportcard.com/badge/github.com/tebeka/selenium)](https://goreportcard.com/report/github.com/tebeka/selenium)
+[![GoDoc](https://godoc.org/github.com/rif/selenium?status.svg)](https://godoc.org/github.com/rif/selenium)
 
 ## About
 
 This is a [WebDriver][selenium] client for [Go][go]. It supports the [WebDriver
 protocol][webdriver] and has been tested with various versions of [Selenium
 WebDriver][selenium], Firefox and [Geckodriver][geckodriver], and Chrome and
-[ChromeDriver][chromedriver], 
+[ChromeDriver][chromedriver],
 
 `selenium` is currently maintained by Eric Garrido ([@minusnine][minusnine]).
 
@@ -117,7 +115,7 @@ a more idiomatic type.
 
 ## Hacking
 
-Patches are encouraged through GitHub pull requests. Please ensure that: 
+Patches are encouraged through GitHub pull requests. Please ensure that:
 
 1. A test is added for anything more than a trivial change and that the
    existing tests pass. See below for instructions on setting up your test
@@ -147,14 +145,14 @@ init.go change.
 
 Run the tests:
 
-    $ go test 
+    $ go test
 
 * There is one top-level test for each of:
     1. Chromium and ChromeDriver.
     2. A new version of Firefox and Selenium 3.
     3. HTMLUnit, a Java-based lightweight headless browser implementation.
     4. A new version of Firefox directly against Geckodriver.
-    
+
   There are subtests that are shared between both top-level tests.
 
 * To run only one of the top-level tests, pass one of:
